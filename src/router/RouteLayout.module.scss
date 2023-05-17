@@ -1,0 +1,18 @@
+@use 'src/assets/styles/base';
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 140px 1fr;
+  grid-template-areas: 'header header'
+                      'sidebar content';
+  gap: 15px;
+  width: map-get(base.$app_width, app);
+  height: map-get(base.$app_height, app);
+
+  main {
+    grid-area: content;
+    background-color: var(--bg-color-main);
+    border-radius: 20px;
+  }
+}

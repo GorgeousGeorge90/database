@@ -8,7 +8,12 @@ export const cardsApi = {
             .select('*')
         return cards
     },
-
+    selectCard: async (id,select) => {
+        const { error } = await supabase
+            .from('cards')
+            .update({ select })
+            .eq('id', id)
+    },
     deleteCard: async id => {
         const { data, error } = await supabase
             .from('cards')

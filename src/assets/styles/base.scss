@@ -1,0 +1,17 @@
+@use 'sass:map';
+
+
+$app_width: (
+        app: 1200px,
+        container: 900px,
+        block: 600px,
+);
+
+$app_height: (
+        app: 100vh,
+        header: 140px,
+        content: calc(100vh - 140px),
+);
+
+
+

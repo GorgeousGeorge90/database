@@ -1,0 +1,35 @@
+@use 'src/assets/styles/base';
+@import 'src/assets/styles/extends';
+
+header {
+  @extend %base-flex;
+  width: map-get(base.$app_width, app);
+  height: map-get(base.$app_height, header);
+  background-color: var(--bg-color-header);
+  color: #FFF;
+  grid-area: header;
+  border-radius: 20px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: map-get(base.$app_width, container);
+
+    .logo {
+
+    }
+
+    .title {
+
+    }
+
+    .btn {
+      display: flex;
+      flex-grow: 1;
+      justify-content: end;
+
+    }
+
+  }
+}

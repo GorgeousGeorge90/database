@@ -1,0 +1,41 @@
+@use 'src/assets/styles/base';
+@import "src/assets/styles/extends";
+
+
+.contacts {
+  display: grid;
+  grid-template-rows: 1fr 250px 50px;
+  flex-direction: column;
+  height: map-get(base.$app_height, content);
+  padding: 30px;
+
+
+  .logo {
+    background-image: url("https://images.unsplash.com/photo-1682695794816-7b9da18ed470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80");
+    background-size: cover;
+    border-radius: 20px;
+  }
+
+  .desc {
+  }
+
+  .gh {
+    cursor: pointer;
+
+    span:first-child {
+      font-weight: bolder;
+    }
+
+    :hover {
+      font-weight: bolder;
+      transform: scale(1.1);
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+
+    }
+  }
+
+}

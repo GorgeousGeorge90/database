@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+:root [theme = 'light'] {
+  --bg-color-header: #01b4e4;
+  --bg-color-main: #b7dcfa;
+  --primary-color: orange;
+  --secondary-color: #fff;
+  --alter-color: #0d253f;
+}
+
+:root [theme = 'dark'] {
+  --bg-color-header:  #0d253f;
+  --bg-color-main:   #65a9f3;
+  --primary-color: orange;
+  --secondary-color: #fff;
+  --alter-color:#01b4e4;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Serif', serif;
+}
+
+

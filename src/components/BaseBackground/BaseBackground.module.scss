@@ -1,0 +1,8 @@
+@use 'src/assets/styles/base';
+
+.back {
+  width: map-get(base.$app_width, app);
+  height: 300px;
+  background-image: url("https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+}
